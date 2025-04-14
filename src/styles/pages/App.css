@@ -1,0 +1,93 @@
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.logo.profile {
+  transition: filter 0.3s, transform 0.3s;
+  will-change: filter, transform;
+}
+
+.logo {
+  height: 10em;
+  padding: 1em;
+  border-radius: 50%;
+  margin-top: 5rem;
+}
+
+.logo.profile:hover {
+  filter: drop-shadow(0 0 1rem #646cffaa);
+  transform: scale(1.05);
+}
+
+.card {
+  padding: 1em;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  transition: filter 0.3s, transform 0.3s;
+  will-change: filter, transform;
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.8em;
+  transition: filter 0.3s, transform 0.3s;
+  will-change: filter, transform;
+}
+
+.myName {
+  transition: filter 0.3s, transform 0.3s;
+  will-change: filter, transform;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chat-action-btn {
+  background-color: #000000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: inherit;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.chat-action-btn:hover {
+  background-color: #0047b3;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between buttons */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #212529;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 200px; /* Adjust width of the buttons */
+  text-align: center;
+}
+
+.custom-button:hover {
+  background-color: #fff;
+  color: #000;
+}

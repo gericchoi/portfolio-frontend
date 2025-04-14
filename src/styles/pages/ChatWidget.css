@@ -1,0 +1,212 @@
+/* Chat Bubble Button */
+.chat-bubble {
+    position: fixed;
+    bottom: 80px;
+    /* Place the button above the bottom edge */
+    right: 20px;
+    /* Keep the button on the right edge */
+    border-radius: 50%;
+    padding: 12px;
+    /* Slightly bigger padding for better usability */
+    background-color: #0066FF;
+    color: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 50px;
+    /* Bigger size for the button */
+    height: 50px;
+    /* Bigger size for the button */
+    transition: background-color 0.3s ease;
+}
+
+.chat-bubble:hover {
+    background-color: #333;
+}
+
+/* Chat Window */
+.chat-window {
+    position: fixed;
+    bottom: 80px;
+    /* Adjusted above the bubble */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    /* Standard width for chat window */
+    max-width: 90%;
+    /* Ensure it's responsive */
+    height: 450px;
+    /* Standard height for chat window */
+    background-color: #fff;
+    border-radius: 30px;
+    /* Rounded corners */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    /* Softer shadow */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+    /* Hidden by default */
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-window.open {
+    display: flex;
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* To space out the text and close button */
+    align-items: center;
+    /* Vertically centers the content */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.chat-header .left-text {
+    font-size: 18px;
+    /* Keeps the text size consistent */
+}
+
+.chat-header .close-btn {
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Messages Container */
+.messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    max-height: 320px;
+    color: black;}
+
+.message {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message.bot {
+    align-items: flex-start;
+}
+
+.message.user {
+    align-items: flex-end;
+}
+
+.message-text {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #efefef;
+    max-width: 80%;
+    font-size: 14px;
+}
+
+.message.user .message-text {
+    background-color: #030303;
+    color: #fff;
+}
+
+.message.bot .message-text {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Input Area */
+.input-area {
+    padding: 12px;
+    background-color: #fff;
+    color: black;
+    border-top: 1px solid #ddd;
+    display: flex;
+}
+
+.input-area input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #fff;
+    color: black;
+}
+
+.input-area button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.input-area button:hover {
+    background-color: #0047b3;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .chat-window {
+        width: 90%;
+        /* Full width on mobile */
+        height: 380px;
+        /* Adjust height for smaller screen */
+        bottom: 80px;
+        /* Position above chat bubble */
+    }
+
+    .chat-bubble {
+        bottom: 80px;
+        /* Ensure button is not cut off */
+        right: 15px;
+        /* Ensure button is not cut off */
+    }
+
+    .input-area input {
+        font-size: 12px;
+        /* Smaller input font */
+    }
+
+    .input-area button {
+        font-size: 12px;
+        /* Smaller button font */
+    }
+
+    .messages {
+        padding: 10px;
+        font-size: 12px;
+        /* Smaller font for messages on mobile */
+    }
+
+    .message-text {
+        font-size: 12px;
+        /* Smaller message text */
+    }
+}

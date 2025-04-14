@@ -1,0 +1,45 @@
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--background, #fff);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.bottom-nav button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: var(--text-primary, #000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: filter 0.3s, transform 0.3s;
+    will-change: filter, transform;
+}
+
+.bottom-nav button:hover {
+    filter: drop-shadow(0 0 1rem #646cffaa);
+    transform: scale(1.35);
+}
+
+.bottom-nav svg {
+    font-size: 20px;
+}
+
+.profile-photo {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}

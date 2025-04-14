@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import "bootstrap/dist/css/bootstrap.css";
+@import './styles/base/Global.css';
+@import './styles/pages/App.css';
+@import './styles/pages/BottomNavigation.css';
+@import './styles/pages/TopNavigation.css';
+@import './styles/pages/TechStack.css';
+@import './styles/pages/ContactPage.css';
+@import './styles/pages/ChatWidget.css';
+@import './styles/pages/SearchBox.css';
