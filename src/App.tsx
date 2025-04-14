@@ -1,11 +1,12 @@
-import profile from "./assets/profile.jpg";
-import usePageTitle from "./hooks/usePageTitle";
-import BottomNavigation from "./BottomNavigation";
-import TopNavigation from "./TopNavigation";
-import TechStack from "./TechStack";
-import ContactForm from "./ContactForm";
-import ChatWidget from "./ChatWidget";
-import ProjectCard from "./ProjectCard";
+import {
+  profile,
+  usePageTitle,
+  TopNavigation,
+  BottomNavigation,
+  TechStack,
+  ContactForm,
+  ChatWidget,
+} from "../src/components/componentBundle";
 
 import "./index.css";
 
@@ -15,9 +16,9 @@ function App() {
   return (
     <>
       <ChatWidget />
+
       <TopNavigation />
 
-      {/* HOME SECTION */}
       <section id="home" className="fade-in-section">
         <div>
           <img src={profile} className="logo profile" alt="Profile logo" />
@@ -48,6 +49,7 @@ function App() {
           </p>
         </div>
       </section>
+
       <section id="resume-section">
         <div className="button-container">
           <p className="read-the-docs">
@@ -70,23 +72,22 @@ function App() {
           </a>
         </div>
       </section>
-      {/* CONTACT SECTION - moved outside */}
+
       <section id="contact" className="fade-in-section">
         <div className="card">
           <p className="read-the-docs">
             I'm open for new opportunities, if interested you can contact me by
             email or message me on whatsapp below.
           </p>
+
           <ContactForm />
         </div>
       </section>
 
-      {/* TECH STACK SECTION */}
       <section id="techstack" className="fade-in-section">
         <TechStack />
       </section>
 
-      {/* PROJECTS SECTION */}
       <section id="projects" className="fade-in-section">
         <p className="read-the-docs">
           Thank you for reaching projects part! Currently this part is

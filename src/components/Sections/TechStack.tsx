@@ -8,7 +8,6 @@ const TechStack = () => {
       <h1 className="text-center mb-4">Technology Stack</h1>
 
       <div className="row">
-        {/* Left Column */}
         <div className="col-12 col-md-6">
           <h5 className="font-weight-bold">
             Programming Languages & Frameworks
@@ -29,7 +28,6 @@ const TechStack = () => {
           </ul>
         </div>
 
-        {/* Right Column */}
         <div className="col-12 col-md-6">
           <h5 className="font-weight-bold">Tools & Database</h5>
           <ul className="tech-list">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MessageCircle } from "lucide-react";
-import "./index.css"; // Import the external CSS file
+import "../../index.css";
 
 const ChatWidget = () => {
   const [chatOpen, setChatOpen] = useState(false);
@@ -8,7 +8,7 @@ const ChatWidget = () => {
   const [messages, setMessages] = useState<{ sender: string; text: string }[]>(
     [],
   );
-  const chatWindowRef = useRef<HTMLDivElement>(null); // Ref to chat window
+  const chatWindowRef = useRef<HTMLDivElement>(null);
 
   const toggleChat = () => {
     setChatOpen(!chatOpen);
@@ -20,12 +20,10 @@ const ChatWidget = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add user message to the state
     setMessages([...messages, { sender: "user", text: message }]);
-    setMessage(""); // Clear the input field
+    setMessage("");
 
     try {
-      // Send message to backend (replace with your actual backend URL)
       const response = await fetch(`${import.meta.env.VITE_API_URL}/chat`, {
         method: "POST",
         headers: {
@@ -38,7 +36,6 @@ const ChatWidget = () => {
         const data = await response.json();
         const botReply = data.reply;
 
-        // Add bot response to the messages state after a slight delay
         setTimeout(() => {
           setMessages((prevMessages) => [
             ...prevMessages,
@@ -61,7 +58,6 @@ const ChatWidget = () => {
     }
   };
 
-  // Close chat if clicked outside of the chat window
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -72,28 +68,23 @@ const ChatWidget = () => {
       }
     };
 
-    // Add event listener to handle outside click
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      // Cleanup the event listener on component unmount
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   return (
     <div>
-      {/* Chat Bubble Button */}
       <button className="chat-bubble" onClick={toggleChat}>
         <MessageCircle size={20} />
       </button>
 
-      {/* Chat Window */}
       <div
         className={`chat-window ${chatOpen ? "open" : ""}`}
         ref={chatWindowRef}
       >
-        {/* Chat Header */}
         <div className="chat-header">
           <div className="left-text">Let's Chat</div>
           <button className="close-btn" onClick={() => setChatOpen(false)}>
@@ -101,7 +92,6 @@ const ChatWidget = () => {
           </button>
         </div>
 
-        {/* Messages Container */}
         <div className="messages">
           {messages.map((msg, index) => (
             <div
@@ -113,7 +103,6 @@ const ChatWidget = () => {
           ))}
         </div>
 
-        {/* Input Area */}
         <form onSubmit={handleSubmit} className="input-area">
           <input
             type="text"

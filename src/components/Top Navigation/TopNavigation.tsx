@@ -1,7 +1,7 @@
 import { Sun, Moon } from "lucide-react";
-import useTheme from "./hooks/useTheme";
-import SearchBox from "./SearchBox";
-import "./index.css";
+import useTheme from "../../hooks/useTheme";
+import SearchBox from "../Bottom Navigation/Search/SearchBox";
+import "../../index.css";
 
 const TopNavigation = () => {
   const scrollTo = (id: string) => {

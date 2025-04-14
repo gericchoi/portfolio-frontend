@@ -67,7 +67,6 @@ const ContactPage = () => {
           />
         </div>
 
-        {/* Email Input */}
         <div className="input-group mb-3">
           <span className="input-group-text border-end-0 theme-icon-bg">
             <Mail size={16} className="theme-icon" />
@@ -83,7 +82,6 @@ const ContactPage = () => {
           />
         </div>
 
-        {/* Message Textarea */}
         <div className="input-group mb-3">
           <span className="input-group-text border-end-0 theme-icon-bg">
             <MessageCircle size={16} className="theme-icon" />
@@ -99,7 +97,6 @@ const ContactPage = () => {
           />
         </div>
 
-        {/* Submit Button */}
         <div className="submit-button d-grid gap-2">
           <button
             type="submit"

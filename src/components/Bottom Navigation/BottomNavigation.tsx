@@ -1,6 +1,6 @@
 import { Home, Code, Wrench, LayoutDashboard } from "lucide-react";
-import "./index.css";
-import logo from "./assets/Logo.png";
+import "../../index.css";
+import logo from "../../assets/Logo.png";
 
 const BottomNavigation = () => {
   const scrollTo = (id: string) => {

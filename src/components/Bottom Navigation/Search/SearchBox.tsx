@@ -1,7 +1,7 @@
 import { Search } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import Fuse from "fuse.js";
-import "./index.css";
+import "../../../index.css";
 
 type SearchItem = {
   title: string;
