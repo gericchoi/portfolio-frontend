@@ -87,20 +87,6 @@
     /* Ensure text wraps properly */
 }
 
-/* Arrow Icon */
-.popup-result .arrow-icon {
-    color: #333;
-    font-size: 14px;
-    margin-left: 6px;
-    transition: transform 0.3s ease;
-}
-
-.popup-result .arrow-icon:hover {
-    transform: translateX(4px);
-    /* Arrow moves on hover */
-}
-
-/* Add an icon to each search result */
 .popup-result .result-icon {
     margin-right: 8px;
     color: #555;

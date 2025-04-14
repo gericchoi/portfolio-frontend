@@ -193,6 +193,146 @@ section {
 }
 
 /* ───────── MEDIA QUERIES ───────── */
+/* Very Small Devices (291px width) */
+@media (min-width: 290px) and (max-width: 299px) {
+
+    html,
+    body {
+        padding: 0.4rem;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    section {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .contact-container {
+        padding: 0 0.4rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.7rem;
+        font-size: 0.85em;
+    }
+
+    /* Fix for search icon at this narrow width */
+    .search-icon {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+
+/* Extra Small Devices (Smaller Phones) */
+@media (max-width: 320px) {
+
+    html,
+    body {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-container {
+        padding: 0 0.5rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9em;
+    }
+}
+
+/* Small Devices (Standard Small Phones) */
+@media (min-width: 321px) and (max-width: 375px) {
+
+    html,
+    body {
+        padding: 0.75rem;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .contact-container {
+        padding: 0 0.75rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.85rem;
+    }
+}
+
+/* Small-Medium Devices (Larger Small Phones) */
+@media (min-width: 376px) and (max-width: 479px) {
+
+    html,
+    body {
+        padding: 0.85rem;
+    }
+
+    h1 {
+        font-size: 1.9em;
+    }
+
+    section {
+        padding: 1.75rem;
+    }
+
+    .contact-container {
+        padding: 0 0.85rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.9rem;
+    }
+
+    /* Fix for search icon at this breakpoint */
+    .search-icon {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        min-height: 24px;
+    }
+}
+
+/* Special fix for 469px width devices */
+@media (min-width: 460px) and (max-width: 479px) {
+
+    /* Specific fix for search icon at this specific resolution */
+    .search-icon {
+        width: 26px;
+        height: 26px;
+        min-width: 26px;
+        min-height: 26px;
+    }
+}
+
+/* Your existing queries below */
 /* Mobile */
 @media (max-width: 480px) {
 

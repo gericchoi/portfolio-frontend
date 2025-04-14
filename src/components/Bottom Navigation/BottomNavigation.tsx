@@ -1,6 +1,5 @@
 import { Home, Code, Wrench, LayoutDashboard } from "lucide-react";
 import "../../index.css";
-import logo from "../../assets/Logo.png";
 
 const BottomNavigation = () => {
   const scrollTo = (id: string) => {
@@ -24,12 +23,6 @@ const BottomNavigation = () => {
       <button onClick={() => scrollTo("projects")}>
         <LayoutDashboard />
       </button>
-      <img
-        src={logo}
-        alt="Profile"
-        className="profile-photo"
-        onClick={() => scrollTo("home")}
-      />
     </nav>
   );
 };
