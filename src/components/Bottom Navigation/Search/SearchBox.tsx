@@ -1,4 +1,4 @@
-import { Search } from "lucide-react";
+import { Search, X } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import Fuse from "fuse.js";
 import "../../../index.css";
@@ -85,14 +85,21 @@ const SearchBox = () => {
       <Search className="search-icon" size={22} onClick={toggleOpen} />
       {isOpen && (
         <div className="popup-search-wrapper" ref={boxRef}>
-          <input
-            ref={inputRef}
-            type="text"
-            className="popup-search-input"
-            placeholder="Looking for something?"
-            value={query}
-            onChange={handleChange}
-          />
+          <div className="search-header">
+            <input
+              ref={inputRef}
+              type="text"
+              className="popup-search-input"
+              placeholder="Looking for something?"
+              value={query}
+              onChange={handleChange}
+            />
+            <X
+              className="close-search-btn"
+              size={16}
+              onClick={() => setIsOpen(false)}
+            />
+          </div>
           {results.length > 0 && (
             <div className="popup-search-results">
               {results.map((item, index) => (

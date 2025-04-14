@@ -154,6 +154,14 @@ button:disabled {
     border-bottom: 1px solid gray;
 }
 
+[data-theme="dark"] .popup-search-wrapper {
+    background-color: #444;
+}
+
+[data-theme="dark"] .popup-result {
+    border-bottom: 1px solid #444;
+}
+
 /* ───────── OTHER COMPONENTS ───────── */
 .contact-container {
     width: 100%;

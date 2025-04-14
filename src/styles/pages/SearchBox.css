@@ -1,112 +1,84 @@
-/* Compact Styling for Search Icon and Popup */
-.search-icon {
-    cursor: pointer;
-    color: var(--text-color);
-    margin-right: 8px;
-    transition: color 0.2s ease;
-}
-
-.search-icon:hover {
-    transform: scale(1.1);
-}
-
+/* More compact search with smaller text and padding */
 .popup-search-wrapper {
-    position: absolute;
-    top: 50px;
-    right: 70px;
-    width: 240px;
-    /* Reduced width for a more compact view */
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-    z-index: 9999;
-    animation: slideIn 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    /* Reduced from 60px */
+}
+
+.search-header {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    /* Smaller than before */
+    margin-bottom: 10px;
+    /* Reduced from 15px */
 }
 
 .popup-search-input {
     width: 100%;
-    padding: 6px 8px;
+    padding: 8px 12px;
+    /* Smaller padding */
+    border-radius: 6px;
+    /* Smaller radius */
     border: 1px solid #ddd;
-    font-size: 13px;
-    outline: none;
+    font-size: 14px;
+    /* Smaller font */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.close-search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    padding: 4px;
 }
 
 .popup-search-results {
-    max-height: 250px;
+    width: 90%;
+    max-width: 500px;
+    /* Match input width */
+    max-height: 60vh;
     overflow-y: auto;
+    background: white;
+    border-radius: 6px;
+    /* Smaller radius */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .popup-result {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-radius: 6px;
-    transition: background 0.2s;
-    cursor: pointer;
-    font-size: 10px;
-    position: relative;
-    margin-bottom: 8px;
+    padding: 10px 12px;
+    /* Reduced padding */
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    /* Smaller font */
+}
+
+.popup-result strong {
+    font-size: 14px;
+    /* Smaller title */
+    margin-bottom: 2px;
+    display: block;
 }
 
 .popup-result p {
-    margin: 0;
-    font-size: 11px;
-    /* Smaller font size */
-    color: #555;
-    line-height: 1.4;
-    max-height: 48px;
-    /* Limit to 2 lines for description */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* Add ellipsis (...) for truncated text */
-    white-space: normal;
-    /* Allow the text to wrap */
-}
-
-/* Result Title */
-.popup-result .result-title {
-    font-weight: bold;
-    font-size: 14px;
-    /* Larger font for the title */
-    color: #333;
-    margin-bottom: 4px;
-    /* Reduced margin for compactness */
-}
-
-/* Result Description */
-.popup-result .result-description {
     font-size: 12px;
-    /* Smaller description text */
-    color: #777;
-    line-height: 1.4;
-    max-height: 36px;
-    /* Limit to two lines */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    /* Ensure text wraps properly */
+    /* Even smaller description */
+    margin: 3px 0 0;
+    color: #666;
 }
 
-.popup-result .result-icon {
-    margin-right: 8px;
-    color: #555;
-    font-size: 14px;
-    transition: color 0.2s ease;
-}
-
-.popup-result .result-icon:hover {
-    color: #0066FF;
-    /* Change icon color on hover */
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.search-icon {
+    cursor: pointer;
 }
