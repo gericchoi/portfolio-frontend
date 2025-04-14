@@ -5,6 +5,7 @@ import BottomNavigation from "./Bottom Navigation/BottomNavigation";
 import TechStack from "./Sections/TechStack";
 import ContactForm from "./Contact Form/ContactForm";
 import ChatWidget from "./ChatBot/ChatWidget";
+import GetInTouch from "./Contact Form/GetInTouch";
 
 export {
   profile,
@@ -14,4 +15,5 @@ export {
   TechStack,
   ContactForm,
   ChatWidget,
+  GetInTouch,
 };

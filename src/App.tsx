@@ -6,6 +6,7 @@ import {
   TechStack,
   ContactForm,
   ChatWidget,
+  GetInTouch,
 } from "../src/components/componentBundle";
 
 import "./index.css";
@@ -16,9 +17,7 @@ function App() {
   return (
     <>
       <ChatWidget />
-
       <TopNavigation />
-
       <section id="home" className="fade-in-section">
         <div>
           <img src={profile} className="logo profile" alt="Profile logo" />
@@ -49,7 +48,7 @@ function App() {
           </p>
         </div>
       </section>
-
+      <GetInTouch />
       <section id="resume-section">
         <div className="button-container">
           <p className="read-the-docs">
@@ -72,7 +71,6 @@ function App() {
           </a>
         </div>
       </section>
-
       <section id="contact" className="fade-in-section">
         <div className="card">
           <p className="read-the-docs">
@@ -83,18 +81,15 @@ function App() {
           <ContactForm />
         </div>
       </section>
-
       <section id="techstack" className="fade-in-section">
         <TechStack />
       </section>
-
       <section id="projects" className="fade-in-section">
         <p className="read-the-docs">
           Thank you for reaching projects part! Currently this part is
           unavailable for now!
         </p>
       </section>
-
       <BottomNavigation />
     </>
   );
