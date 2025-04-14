@@ -150,6 +150,10 @@ button:disabled {
     border-color: #fff;
 }
 
+[data-theme="dark"] .tech-item {
+    border-bottom: 1px solid gray;
+}
+
 /* ───────── OTHER COMPONENTS ───────── */
 .contact-container {
     width: 100%;
