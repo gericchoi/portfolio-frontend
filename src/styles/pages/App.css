@@ -1,6 +1,7 @@
 #root {
   height: 100%;
   overflow-x: hidden;
+  align-items: center;
 }
 
 .logo.profile {
@@ -39,6 +40,8 @@
 .myName {
   transition: filter 0.3s, transform 0.3s;
   will-change: filter, transform;
+  text-align: center;
+  align-items: center;
 }
 
 .button-group {

@@ -100,7 +100,7 @@ const ContactPage = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="d-grid gap-2">
+        <div className="submit-button d-grid gap-2">
           <button
             type="submit"
             className="btn btn-dark btn-sm btn-circle small-submit-btn"

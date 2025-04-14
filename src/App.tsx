@@ -5,6 +5,7 @@ import TopNavigation from "./TopNavigation";
 import TechStack from "./TechStack";
 import ContactForm from "./ContactForm";
 import ChatWidget from "./ChatWidget";
+import ProjectCard from "./ProjectCard";
 
 import "./index.css";
 
