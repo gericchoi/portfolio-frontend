@@ -228,14 +228,6 @@ section {
         padding: 0.7rem;
         font-size: 0.85em;
     }
-
-    /* Fix for search icon at this narrow width */
-    .search-icon {
-        width: 30px;
-        height: 30px;
-        min-width: 30px;
-        min-height: 30px;
-    }
 }
 
 /* Extra Small Devices (Smaller Phones) */
@@ -333,10 +325,10 @@ section {
 
     /* Specific fix for search icon at this specific resolution */
     .search-icon {
-        width: 26px;
-        height: 26px;
-        min-width: 26px;
-        min-height: 26px;
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        min-height: 24px;
     }
 }
 
