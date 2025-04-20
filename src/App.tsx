@@ -64,7 +64,7 @@ function App() {
             Github Profile
           </a>
           <a
-            href="https://github.com/gericchoi/resume/raw/main/Gerico-Mangali-Resume.pdf"
+            href="https://github.com/gericchoi/resume/blob/main/resume%2018%3A25.pdf"
             download
             className="custom-button"
           >
