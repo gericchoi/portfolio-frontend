@@ -3,10 +3,11 @@ import {
   usePageTitle,
   TopNavigation,
   BottomNavigation,
-  TechStack,
   ContactForm,
-  ChatWidget,
   GetInTouch,
+  TechStack,
+  Projects,
+  ChatWidget,
 } from "../src/components/componentBundle";
 
 import "./index.css";
@@ -85,10 +86,7 @@ function App() {
         <TechStack />
       </section>
       <section id="projects" className="fade-in-section">
-        <p className="read-the-docs">
-          Thank you for reaching projects part! Currently this part is
-          unavailable for now!
-        </p>
+        <Projects />
       </section>
       <BottomNavigation />
     </>
